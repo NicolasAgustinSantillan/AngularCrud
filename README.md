@@ -7,6 +7,9 @@ Como se creo el proyecto
 PS D:\Softwares\CRUD-Ejemplo\frontend> ng new
 PS D:\Softwares\CRUD-Ejemplo\frontend> npm i bootstrap jquery popper.js
 
+$ ng generate service services/employee --skip-tests --dry-run
+Mostramos lo que generaremos en la carpeta servicios, con su servicio employee
+
 dentro de angular.json 
 {
 	"styles": [
@@ -60,3 +63,11 @@ ngOnInit(): void{
         </form>   
 
 ============================ SPREAD ============================
+
+============================ FONT AWESOME INSTALACION ============================
+
+$ npm install -save@fortawesome/fontawesome-free
+
+add angular.json --> styles -->  "node_modules/@fortawesome/fontawesome-free/css/all.css"
+add angular.json --> script --> "node_modules/@fortawesome/fontawesome-free/js/all.js"
+

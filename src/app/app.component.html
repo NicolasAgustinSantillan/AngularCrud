@@ -1,53 +1,8 @@
-<nav class="navbar navbar-dark bg-primary">
-  <img
-    width="40"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  />
-  <a class="navbar-brand" href="">
-    Angular Simple CRUD
-  </a>
-</nav>
+<app-toolbar></app-toolbar>
+<!-- <span>{{surname}}</span>
+<app-user [name] = 'user' (surnameChangeEventEmiter)="onChangeSurname($event)"></app-user> -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
+<!-- <app-user-form></app-user-form>
+<app-user-list id="lista"></app-user-list> -->
 
-      <form [formGroup]="form" (ngSubmit)="send()">
-        <div class="card mt-4">
-          <div class="card-body">
-            <div class="card-title">
-              Insert a new Employee
-            </div>
-            <div class="formgroup">
-              <input type="text"  placeholder="Insert A Name" class="form-control mt-3" formControlName="name">
-            </div>
-            <div class="formgroup">
-              <input type="text"  placeholder="Insert A country" class="form-control mt-3" formControlName="country">
-            </div>
-          </div>
-        <div class="formgroup">
-          <button class="btn btn-outline-success mt-3" type="submit" *ngIf="form.status == 'VALID'">Send</button>
-        </div>
-      </div>
-    </form>   
-
-    <ul class="list-group mt-4">
-      <li 
-      *ngFor="let employee of EmployeeArray" 
-      class="list-group-item list-group-item-action">
-      <span class="badge bg-primary">{{ employee.id }}</span>
-       - {{ employee.name }} - {{ employee.country }}
-      </li>
-    </ul>
-
-    </div>
-    <div class="col-md-4">
-      <img
-      width="300"
-      alt="Angular Logo"
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-    />
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>

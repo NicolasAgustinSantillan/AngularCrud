@@ -1,0 +1,17 @@
+<div id="lista" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul id="Personas" class="list-group mt-4 list-group-item list-group-item-action">
+        <strong >Personas: </strong>
+        <hr>
+        <li 
+        *ngFor="let employee of employeeService.EmployeeArray" 
+        class="list-group-item list-group-item-action">
+        <span class="badge bg-primary">{{ employee.id }}</span>
+        - {{ employee.name }} - {{ employee.country }}
+        </li>
+      </ul>
+      </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+<form id="formularioCargar" [formGroup]="formEmployee" (ngSubmit)="send()" class="frmUser">
+
+    <div class="card mt-4">
+      <div class="card-body">
+        <div class="card-title">
+          Insert a new Employee
+        </div>
+        <div class="formgroup">
+          <input type="text"  placeholder="Insert A Name" class="form-control mt-3" [formControlName]="N('name')">
+        </div>
+        <div class="formgroup">
+          <input type="text"  placeholder="Insert A country" class="form-control mt-3" [formControlName]="N('country')">
+        </div>
+      </div>
+    <div class="formgroup">
+      <button class="btn btn-outline-success mt-3" type="submit">Send</button>
+    </div>
+    <div class="formgroup">
+      <pre>{{ formEmployee.value | json }}</pre>
+    </div>
+  </div>
+</form>   
+
