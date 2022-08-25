@@ -3,10 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  templateUrl: './user-input-output.component.html',
+  styleUrls: ['./user-input-output.component.css']
 })
-export class UserComponent implements OnInit {
+export class UserInputOutputComponent implements OnInit {
   @Input() name : string
   surname : string
 

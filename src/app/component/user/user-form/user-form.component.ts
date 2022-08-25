@@ -28,7 +28,7 @@ export class UserFormComponent implements OnInit {
   send(): any {
 
     console.log(this.formEmployee)
-    //this.employeeService.addEmployee(this.formEmployee.value)
+    this.employeeService.addEmployee(this.formEmployee.value)
   }
 
   N(key: keyof CreateEmployee) {

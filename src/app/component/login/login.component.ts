@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { modelUser } from '../DTO/user';
-import { AuthService } from '../services/auth.service';
+import { modelUser } from '../../DTO/user';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
     
     await this.authService.login(this.formUser.value).then((res) => {
       console.log(res)
-      this.router.navigate(['user-form'])
+      this.router.navigate(['user'])
     }).catch(err => {
       console.log(err)
     })
